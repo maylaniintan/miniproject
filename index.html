@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RevoU Mini Software Engineering Class</title>
+</head>
+<body>
+
+    <header class="header-wrapper">
+        <img class="logo" alt="revou-logo" src="revou.png" />
+        <div class="menu">
+          <a href="index.html"><button>Homes</button></a>
+          <a href="profile.html"><button>My Profile</button></a>
+          <a href="#"><button>Portfolio</button></a>
+          <a href="#"><button>Message Us</button></a>
+        </div>
+      </header>
+  
+      <main class="main-content">
+        <h1>Hi <span id="nama">Teman</span>, Welcome To Website</h1>
+        <!-- <script>
+          var name = prompt("Masukan nama kamu");
+          document.getElementById("nama").innerText = name;
+        </script> -->
+  
+      <div>
+        <img class="img-slideshow" src="asset/unplash4.jpg" alt="" >
+        <img class="img-slideshow" src="asset/unplash5.jpg" alt="">
+        <img class="img-slideshow" src="asset/unplash6.jpg" alt="">
+
+          <button onclick="plusDivs(-1)">Previous</button>
+          <button onclick="plusDivs(1)">Next</button>
+        </div> 
+
+        <hr>
+
+        <div id="headquarters-section" class="headquarters">
+          <h1>Our Headquarters</h1>
+          <div class="wrapper">
+              <div class="headquarters-image-container">
+                  <div class="headquarters-image"\ style="background-image: url('asset/unplash11.jpg');"></div>
+                  <p>Anggrek</p>
+              </div>
+              <div class="headquarters-image-container">
+                  <div class="headquarters-image" style="background-image: url('asset/unplash22.jpg');"></div>
+                  <p>Bugenvil</p>
+              </div>
+              <div class="headquarters-image-container">
+                  <div class="headquarters-image" style="background-image: url('asset/unplash3.jpg');"></div>
+                  <p>Cempaka</p>
+              </div>
+          </div>
+      </div>
+        
+      <hr>
+
+        <div class="form-section">
+            <form name="message-form" onsubmit="return validateForm()">
+              <h1>Message Us</h1>
+              <div class="table">
+                <table class="table-x" width="500px">
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td width="10%">
+                          <input placeholder="Nama" type="text" name="full-name" style="width: 350px;" /> <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td>:</td>
+                        <td width="10%">
+                          <input type="date" name="birth-date" />
+                          <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>:</td>
+                        <td width="10%">
+                          <input type="radio" id="male" name="gender" value="Laki-laki" />
+                          <label for="male">Laki-laki</label>
+                          <input type="radio" id="female" name="gender" value="Perempuan" />
+                          <label for="female">Perempuan</label>
+                          <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Message Us</td>
+                        <td>:</td>
+                        <td width="10%">
+                          <textarea placeholder="Pesan" name="messages"></textarea>
+                          <br />
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td colspan="3" >
+                          <input type="submit" value="Submit" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        
+        <hr>
+
+        <div class="form-output">
+          <div class="table">
+            <table class="table-x" width="500px">
+                <tr>
+                    <td><p>Nama</p></td>
+                    <td><p>:</p></td>
+                    <td width="70%">
+                      <span id="sender-full-name"></span><br />
+                    </td>
+                </tr>
+                <tr>
+                  <td><p>Tanggal Lahir</p></td>
+                  <td><p>:</p></td>
+                  <td width="70%">
+                    <span id="sender-birth-date"></span><br />
+                  </td>
+              </tr>
+              <tr>
+                <td><p>Jenis Kelamin</p></td>
+                <td><p>:</p></td>
+                <td width="70%">
+                  <span id="sender-gender"></span><br />
+                </td>
+            </tr>
+            <tr>
+              <td><p>Pesan</p></td>
+              <td><p>:</p></td>
+              <td width="70%">
+                <span id="sender-messages"></span><br />
+              </td>
+          </tr>
+                </table>
+                </div>
+        </div>
+    </div>
+
+<hr>
+          </main>
+      
+</body>
+
+<script src="script.js"></script>
+
+<footer>Created by M.Intan</footer>
+
+</html>
